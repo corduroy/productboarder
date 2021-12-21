@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct TransitoryProductBoarderApp: App {
+	var network = Network()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+				.environmentObject(network)
+
         }
     }
 }
